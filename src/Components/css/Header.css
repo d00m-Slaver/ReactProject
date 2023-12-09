@@ -2,3 +2,15 @@
     width: 30px;
     height: 30px;
 }
+.mainColor{
+    
+}
+
+.leftFlex{
+    flex-grow: 0;
+}
+
+
+.rightOrientationFlex{
+    align-items: 'flex-end'
+}
