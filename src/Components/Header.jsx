@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Form, FormControl, Nav, Navbar } from "react-bootstrap";
 import {Button} from 'react-bootstrap';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LOGO from "../img/logo.png";
+import LOGO from "../img/nightLogoF.png";
 import Styles from"../Components/css/Header.css"
 
 
@@ -20,29 +20,29 @@ const Header = () =>
 {
 return(
 <>
-    <Navbar sticky="top" collapseOnSelect expand="md" style={{backgroundColor:'#000032'}}>
+    <Navbar sticky="top" collapseOnSelect expand="md" style={{backgroundColor:'#000032',display: 'flex'}}>
         <Container>
             <Navbar.Brand href="/">
                 <img 
                 src={LOGO}
                 className="d-inline-block align-top"
-                width="30"
-                height="30"
+                width="50"
+                height="50"
                 alt="logo"
                 />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/" style={{color:'#5d5d7d'}}>Главная</Nav.Link>
-                    <Nav.Link href="/all" style={{color:'#5d5d7d'}}>Все аниме</Nav.Link>
-                    <Nav.Link href="/top100" style={{color:'#5d5d7d'}}>Топ 100</Nav.Link>
+                    <Nav.Link href="/" style={{color:'#5d5d7d',fontSize:'20px'}}>Главная</Nav.Link>
+                    <Nav.Link href="/all" style={{color:'#5d5d7d',fontSize:'20px'}}>Все аниме</Nav.Link>
+                    <Nav.Link href="/top100" style={{color:'#5d5d7d',fontSize:'20px'}}>Топ 100</Nav.Link>
 
-                   <Nav.Link href="/manga" style={{color:'#5d5d7d'}}>Манга</Nav.Link>
-                    <Nav.Link href="/contacts" style={{color:'#5d5d7d'}}>Контакты</Nav.Link>
-                    <Nav.Link href="/aboutUs" style={{color:'#5d5d7d'}}>О нас</Nav.Link>   
+                   <Nav.Link href="/manga" style={{color:'#5d5d7d',fontSize:'20px'}}>Манга</Nav.Link>
+                    <Nav.Link href="/contacts" style={{color:'#5d5d7d',fontSize:'20px'}}>Контакты</Nav.Link>
+                    <Nav.Link href="/aboutUs" style={{color:'#5d5d7d',fontSize:'20px'}}>О нас</Nav.Link>   
                 </Nav>
-                <div style={{display:'flex',flexGrow:'1', flexDirection:'row', alignItems:'flex-end'}}>
+                <div style={{display:'flex', flexGrow:'1', flexDirection:'row-reverse'}}>
                     <Form style={{maxWidth:'400px'}}>
                         <FormControl 
                         type="text"
@@ -50,12 +50,9 @@ return(
                         className="mr-sm-2 mr-r"
                         />
                     </Form>
-                    <Button variant="outline-info">Search</Button>
-                </div>
+                    {/* <Button variant="outline-info">Search</Button> */}
+                 </div>
                      
-                    
-               
-
             </Navbar.Collapse>
         </Container>
     </Navbar>
