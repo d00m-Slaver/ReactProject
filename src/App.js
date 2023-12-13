@@ -7,6 +7,7 @@ import Futer from './Components/Futer'
 function App() {
   return (
     <Header></Header>
+    
   );
 }
 

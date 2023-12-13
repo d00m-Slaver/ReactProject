@@ -1,9 +1,8 @@
 import React from "react";
 import { Container, Form, FormControl, Nav, Navbar } from "react-bootstrap";
-import {Button} from 'react-bootstrap';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LOGO from "../img/nightLogoF.png";
-import Styles from"../Components/css/Header.css"
+
 
 
 import Home from "../Pages/Home";
@@ -50,13 +49,12 @@ return(
                         className="mr-sm-2 mr-r"
                         />
                     </Form>
-                    {/* <Button variant="outline-info">Search</Button> */}
+                    
                  </div>
                      
             </Navbar.Collapse>
         </Container>
     </Navbar>
-    
     <Router>
         <Routes>
             <Route exact path="/" element={<Home/>}/>
@@ -67,7 +65,6 @@ return(
             <Route exact path="/aboutUs" element={<AboutUs/>}/>
         </Routes>
     </Router>
-   
     </>
 );
 } 

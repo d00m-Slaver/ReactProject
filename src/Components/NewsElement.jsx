@@ -1,5 +1,4 @@
 import React from "react";
-import Berserk from "../img/berserk2.jpg";
 
 const NewsElement = (props) =>{
 
@@ -29,7 +28,7 @@ const NewsElement = (props) =>{
     return(
         <a href = {props.a} style={mainBlockStyle}>
             <img 
-            src={Berserk}
+            src={props.imageUrl}
             alt="Фото"
             style={imageStyle}
             />
@@ -39,3 +38,4 @@ const NewsElement = (props) =>{
     );
 }
 export default NewsElement;
+

@@ -4,8 +4,16 @@ import Photo from "../img/epic_Bg_Trigun.jpg"
 import NewsElement from '../Components/NewsElement';
 import OldNewsElement from '../Components/OldNewsElement';
 import Futer from '../Components/Futer';
+import Add from '../Components/Add'
+
+
+import BerserkNewsPhoto from '../img/berserk2.jpg'
+import onePeaceNewsPhoto from '../img/onePeaceNetflix.jpg'
+import onePeaceMangaNewsPhoto from '../img/onePeaceManga.jpg'
+
 
 const Home = () => {
+  
   const homeBlockStyle = {
     backgroundColor:'#000032'
   }
@@ -51,11 +59,6 @@ const Home = () => {
     padding: '10px 100px 50px 100px',
     
   } 
-  const addsBlockStyle = {
-    width:'300px',
-    height:'1200px',
-      border:'1px solid black'
-  }
   const oldNewsBlockStyle = {
     display:'flex',
     flexDirection:'row',
@@ -80,9 +83,9 @@ const Home = () => {
       </div>
 
       <div style={newsBlockStyle}>
-        <NewsElement scra="" type="Anime" info="Ожидаются новые серии берсерка на этой неделе" a="/all"/>
-        <NewsElement scra="" type="Manga" info="1232 Глава ванпис уже на сайте" a="/all"/>
-        <NewsElement scra="" type="Anime" info="Вышла завершая арку серия ванпис" a="/all"/>
+        <NewsElement imageUrl={BerserkNewsPhoto} type="Anime" info="Ожидаются новые серии берсерка на этой неделе" a="/all"/>
+        <NewsElement imageUrl={onePeaceMangaNewsPhoto} type="Manga" info="1232 Глава ванпис уже на сайте" a="/manga"/>
+        <NewsElement imageUrl={onePeaceNewsPhoto} type="Anime" info="Вышла завершая адаптацию серия ванпис" a="/all"/>
       </div>
       
       <div style={whiteNewsBlockStyle}>
@@ -90,7 +93,7 @@ const Home = () => {
         <OldNewsElement text="Лучшие и самые новые новости только у нас, оставляйте отзывы и подписывайтесь
         Лучшие и самые новые новости только у нас, оставляйте отзывы и подписывайтесь
         Лучшие и самые новые новости только у нас, оставляйте отзывы и подписывайтесь" 
-        scra="" 
+        imageUrl={BerserkNewsPhoto} 
         type="Anime" 
         info="Ожидаются новые серии берсерка на этой неделе" 
         a="/all"/>
@@ -98,21 +101,19 @@ const Home = () => {
         text="Лучшие и самые новые новости только у нас, оставляйте отзывы и подписывайтесь
         Лучшие и самые новые новости только у нас, оставляйте отзывы и подписывайтесь
         Лучшие и самые новые новости только у нас, оставляйте отзывы и подписывайтесь" 
-        scra="" 
+        imageUrl={onePeaceMangaNewsPhoto} 
         type="Manga" 
         info="1232 Глава ванпис уже на сайте" 
-        a="/all"/>
+        a="/manga"/>
         <OldNewsElement text="Лучшие и самые новые новости только у нас, оставляйте отзывы и подписывайтесь
         Лучшие и самые новые новости только у нас, оставляйте отзывы и подписывайтесь
         Лучшие и самые новые новости только у нас, оставляйте отзывы и подписывайтесь" 
-        scra="" 
+        imageUrl={onePeaceNewsPhoto}
         type="Anime" 
         info="Вышла завершая арку серия ванпис" 
         a="/all"/>
         </div>
-        <div style={addsBlockStyle}>
-          <div>Тут могла быть ваша реклама.</div>
-        </div>
+        <Add infoAdd="Здесь могла быть ваша реклама, но у вас нет денег."></Add>
         <div>
 
         </div>

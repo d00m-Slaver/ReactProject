@@ -67,13 +67,9 @@ return(
     <div style={futerInfoBlockStyle}>
         <div style={wrapStyle}>Adversite</div>
         <div style={wrapStyle}>Contribute</div>
-        <div style={wrapStyle}>About</div>
-        <div style={wrapStyle}>Self Regulation</div>
-        <div style={wrapStyle}>Privacy Policy</div>
-        <div style={wrapStyle}>Terms Of Use</div>
-        <div style={wrapStyle}>Tecnology Parthner - monocept</div>
-        <div style={wrapStyle}>Syte by AREA 17</div>
-        <div style={wrapStyle}> follow us in BSTU</div>
+        <div style={wrapStyle}>Все права защищены 2023</div>
+        <div style={wrapStyle}>Tecnology Parthner - chatGPT</div>
+        <div style={wrapStyle}>Follow us in BSTU</div>
     </div>
 </div>
 
