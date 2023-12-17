@@ -1,0 +1,16 @@
+.Animeblock{
+    width: 230px;
+    height: 350px;
+    margin: 20px auto;
+    border:3px double #5d5d7d; 
+    border-top-right-radius: 150px;
+    border-top-left-radius: 150px;
+    padding: 15px;
+    text-decoration: none;
+    color:#5d5d7d;
+}
+.allAnimeImgStyle{
+    width: 200px;
+    border-radius:200px;
+    
+}

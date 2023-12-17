@@ -1,11 +1,16 @@
 import React from "react";
+
+import "../Components/css/Anime.css"
+
 const AnimeBlock = (props) =>{
-    return(
-        <div>
-            <img/>
+    return( 
+        <a href={props.put} className="Animeblock">
+            <img src={props.imageLink} className="allAnimeImgStyle"/>
             <div>{props.name}</div>
-            <div>{props.count}</div>
-        </div>
+            <div>Серий: {props.sCount}</div>
+            <div>Фильмов: {props.fCount}
+            </div>
+        </a>
     );
 }
 export default AnimeBlock;

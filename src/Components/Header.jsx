@@ -11,6 +11,7 @@ import Top100 from "../Pages/Top100";
 import Manga from "../Pages/Manga";
 import Contacts from "../Pages/Contacts";
 import AboutUs from "../Pages/AboutUs";
+import PublicSecurity from "./PublicSecurity";
 
 
 
@@ -63,6 +64,7 @@ return(
             <Route exact path="/manga" element={<Manga/>}/>
             <Route exact path="/contacts" element={<Contacts/>}/>
             <Route exact path="/aboutUs" element={<AboutUs/>}/>
+            <Route exact path="/PublicSecurity" element={<PublicSecurity/>}/>
         </Routes>
     </Router>
     </>

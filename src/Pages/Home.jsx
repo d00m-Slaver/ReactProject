@@ -3,7 +3,7 @@ import React from 'react';
 import Photo from "../img/epic_Bg_Trigun.jpg"
 import NewsElement from '../Components/NewsElement';
 import OldNewsElement from '../Components/OldNewsElement';
-import Futer from '../Components/Futer';
+import Footer from '../Components/Footer';
 import Add from '../Components/Add'
 
 
@@ -84,7 +84,7 @@ const Home = () => {
 
       <div style={newsBlockStyle}>
         <NewsElement imageUrl={BerserkNewsPhoto} type="Anime" info="Ожидаются новые серии берсерка на этой неделе" a="/all"/>
-        <NewsElement imageUrl={onePeaceMangaNewsPhoto} type="Manga" info="1232 Глава ванпис уже на сайте" a="/manga"/>
+        <NewsElement imageUrl={onePeaceMangaNewsPhoto} type="Manga" info="1 Глава ванпис уже на сайте" a="/manga"/>
         <NewsElement imageUrl={onePeaceNewsPhoto} type="Anime" info="Вышла завершая адаптацию серия ванпис" a="/all"/>
       </div>
       
@@ -118,7 +118,7 @@ const Home = () => {
 
         </div>
       </div>
-      <Futer></Futer>
+      <Footer></Footer>
     </div>
   );
 };

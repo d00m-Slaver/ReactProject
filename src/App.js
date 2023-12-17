@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header';
-import Futer from './Components/Futer'
+import Footer from './Components/Footer'
 
 function App() {
   return (
